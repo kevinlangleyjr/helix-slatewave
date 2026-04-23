@@ -1,0 +1,249 @@
+# Slatewave for Helix
+# Slate below, teal above.
+#
+# Companion to vscode-slatewave, neovim-slatewave, zed-slatewave,
+# sublime-text-slatewave, jetbrains-slatewave, obsidian-slatewave,
+# and the terminal + prompt family. See https://getslatewave.com.
+
+# ============================================================================
+# Syntax highlighting
+# ============================================================================
+
+# Comments
+"comment" = { fg = "slate-500", modifiers = ["italic"] }
+"comment.line" = { fg = "slate-500", modifiers = ["italic"] }
+"comment.block" = { fg = "slate-500", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "slate-500", modifiers = ["italic"] }
+
+# Variables
+"variable" = "slate-200"
+"variable.builtin" = { fg = "purple", modifiers = ["italic"] }
+"variable.parameter" = { fg = "slate-300", modifiers = ["italic"] }
+"variable.other.member" = "slate-300"
+
+# Constants / literals
+"constant" = "rose-400"
+"constant.builtin" = "rose-400"
+"constant.builtin.boolean" = "rose-400"
+"constant.numeric" = "rose-400"
+"constant.character" = "teal-300"
+"constant.character.escape" = "amber-400"
+
+# Strings
+"string" = "teal-300"
+"string.regexp" = "rose-400"
+"string.special" = "amber-400"
+"string.special.path" = { fg = "sky-400", modifiers = ["underlined"] }
+"string.special.url" = { fg = "sky-400", modifiers = ["underlined"] }
+"string.special.symbol" = "purple"
+
+# Types
+"type" = "teal-200"
+"type.builtin" = "sky-400"
+"type.enum.variant" = "rose-400"
+"constructor" = "teal-200"
+
+# Attributes, labels, namespaces
+"attribute" = { fg = "amber-400", modifiers = ["italic"] }
+"label" = "sky-400"
+"namespace" = "teal-300"
+
+# Functions
+"function" = "sky-300"
+"function.builtin" = "sky-400"
+"function.method" = "sky-300"
+"function.macro" = "amber-400"
+"function.special" = "amber-400"
+
+# Keywords
+"keyword" = "sky-400"
+"keyword.control" = "sky-400"
+"keyword.operator" = "sky-400"
+"keyword.directive" = "purple"
+"keyword.function" = { fg = "purple", modifiers = ["italic"] }
+"keyword.storage" = { fg = "purple", modifiers = ["italic"] }
+"keyword.storage.type" = { fg = "purple", modifiers = ["italic"] }
+"keyword.storage.modifier" = { fg = "purple", modifiers = ["italic"] }
+
+# Operators / punctuation
+"operator" = "slate-400"
+"punctuation" = "slate-400"
+"punctuation.delimiter" = "slate-400"
+"punctuation.bracket" = "slate-400"
+"punctuation.special" = "purple"
+
+# Tags (HTML / JSX / XML)
+"tag" = "sky-400"
+"tag.builtin" = "sky-400"
+"tag.attribute" = { fg = "purple", modifiers = ["italic"] }
+
+# Special
+"special" = "amber-400"
+
+# Markup (markdown / rst / asciidoc)
+"markup.heading" = { fg = "teal-300", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "teal-300", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "sky-400", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "purple", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "teal-200", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "sky-300", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "slate-300", modifiers = ["bold"] }
+"markup.heading.marker" = "slate-500"
+"markup.list" = "rose-400"
+"markup.list.numbered" = "rose-400"
+"markup.list.unnumbered" = "rose-400"
+"markup.list.checked" = "teal-300"
+"markup.list.unchecked" = "slate-500"
+"markup.bold" = { fg = "sky-400", modifiers = ["bold"] }
+"markup.italic" = { fg = "purple", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "slate-500", modifiers = ["crossed_out"] }
+"markup.link" = "sky-400"
+"markup.link.url" = { fg = "sky-400", modifiers = ["underlined"] }
+"markup.link.label" = "teal-300"
+"markup.link.text" = "teal-300"
+"markup.raw" = "teal-200"
+"markup.raw.inline" = "teal-200"
+"markup.raw.block" = "teal-200"
+"markup.quote" = { fg = "slate-400", modifiers = ["italic"] }
+
+# Diff
+"diff.plus" = "teal-300"
+"diff.plus.gutter" = "teal-300"
+"diff.minus" = "rose-400"
+"diff.minus.gutter" = "rose-400"
+"diff.delta" = "amber-400"
+"diff.delta.moved" = "sky-400"
+"diff.delta.gutter" = "amber-400"
+
+# ============================================================================
+# User interface
+# ============================================================================
+
+"ui.background" = { fg = "slate-200", bg = "slate-editor" }
+"ui.background.separator" = { fg = "slate-800" }
+
+"ui.text" = { fg = "slate-200" }
+"ui.text.focus" = { fg = "teal-300", bg = "slate-700", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "slate-500" }
+"ui.text.info" = { fg = "slate-200" }
+"ui.text.directory" = { fg = "teal-300" }
+
+"ui.window" = { fg = "slate-800" }
+"ui.help" = { fg = "slate-200", bg = "slate-800" }
+
+# Cursor — primary uses the teal accent, secondary stays muted
+"ui.cursor" = { fg = "slate-900", bg = "slate-500" }
+"ui.cursor.primary" = { fg = "slate-900", bg = "teal-300" }
+"ui.cursor.primary.normal" = { fg = "slate-900", bg = "teal-300" }
+"ui.cursor.primary.insert" = { fg = "slate-900", bg = "teal-200" }
+"ui.cursor.primary.select" = { fg = "slate-900", bg = "sky-400" }
+"ui.cursor.normal" = { fg = "slate-900", bg = "slate-400" }
+"ui.cursor.insert" = { fg = "slate-900", bg = "slate-500" }
+"ui.cursor.select" = { fg = "slate-900", bg = "sky-300" }
+"ui.cursor.match" = { fg = "teal-300", modifiers = ["bold", "underlined"] }
+
+# Cursorline / cursorcolumn
+"ui.cursorline" = { bg = "slate-800" }
+"ui.cursorline.primary" = { bg = "slate-800" }
+"ui.cursorline.secondary" = { bg = "slate-800" }
+"ui.cursorcolumn" = { bg = "slate-800" }
+"ui.cursorcolumn.primary" = { bg = "slate-800" }
+"ui.cursorcolumn.secondary" = { bg = "slate-800" }
+
+# Gutter / line numbers
+"ui.linenr" = { fg = "slate-500", bg = "slate-editor" }
+"ui.linenr.selected" = { fg = "teal-300", bg = "slate-editor", modifiers = ["bold"] }
+"ui.gutter" = { bg = "slate-editor" }
+"ui.gutter.selected" = { bg = "slate-editor" }
+
+# Selection / highlight
+"ui.selection" = { bg = "slate-700" }
+"ui.selection.primary" = { bg = "slate-700" }
+"ui.highlight" = { bg = "slate-700" }
+"ui.highlight.frameline" = { bg = "slate-700" }
+
+# Statusline — mode badge follows slate-900 on accent
+"ui.statusline" = { fg = "teal-300", bg = "slate-800" }
+"ui.statusline.inactive" = { fg = "slate-400", bg = "slate-800" }
+"ui.statusline.normal" = { fg = "slate-900", bg = "teal-300", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "slate-900", bg = "teal-200", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "slate-900", bg = "sky-400", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "slate-700" }
+
+# Bufferline
+"ui.bufferline" = { fg = "slate-400", bg = "slate-chrome" }
+"ui.bufferline.active" = { fg = "teal-300", bg = "slate-editor", modifiers = ["bold"], underline = { color = "teal-300", style = "line" } }
+"ui.bufferline.background" = { bg = "slate-chrome" }
+
+# Popup / menu / picker
+"ui.popup" = { fg = "slate-200", bg = "slate-800" }
+"ui.popup.info" = { fg = "slate-200", bg = "slate-800" }
+"ui.menu" = { fg = "slate-200", bg = "slate-800" }
+"ui.menu.selected" = { fg = "teal-300", bg = "slate-700", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "slate-600", bg = "slate-800" }
+
+# Virtual text / guides
+"ui.virtual" = { fg = "slate-600" }
+"ui.virtual.whitespace" = { fg = "slate-700" }
+"ui.virtual.indent-guide" = { fg = "slate-guide" }
+"ui.virtual.ruler" = { bg = "slate-800" }
+"ui.virtual.inlay-hint" = { fg = "slate-400", bg = "slate-800" }
+"ui.virtual.inlay-hint.parameter" = { fg = "slate-400", bg = "slate-800", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "slate-400", bg = "slate-800", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "amber-400", modifiers = ["bold"] }
+"ui.virtual.wrap" = { fg = "slate-guide" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "rose-400" }
+"ui.debug.active" = { fg = "amber-400" }
+
+# Diagnostics
+"diagnostic.error" = { underline = { color = "rose-400", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "amber-400", style = "curl" } }
+"diagnostic.info" = { underline = { color = "sky-400", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "teal-300", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"error" = { fg = "rose-400" }
+"warning" = { fg = "amber-400" }
+"info" = { fg = "sky-400" }
+"hint" = { fg = "teal-300" }
+
+# ============================================================================
+# Palette
+# ============================================================================
+
+[palette]
+# Slate foundation
+slate-950 = "#020617"
+slate-900 = "#0f172a"
+slate-800 = "#1e293b"
+slate-700 = "#334155"
+slate-600 = "#475569"
+slate-500 = "#64748b"
+slate-400 = "#94a3b8"
+slate-300 = "#cbd5e1"
+slate-200 = "#e2e8f0"
+slate-100 = "#f1f5f9"
+slate-chrome = "#21252b"
+slate-editor = "#282c34"
+slate-guide = "#3a3f4c"
+
+# Teal signature
+teal-700 = "#0f766e"
+teal-400 = "#2dd4bf"
+teal-300 = "#5eead4"
+teal-200 = "#99f6e4"
+
+# Accents
+sky-400 = "#38bdf8"
+sky-300 = "#7dd3fc"
+cyan-300 = "#67e8f9"
+cyan-700 = "#0e7490"
+purple = "#b388ff"
+purple-light = "#c4b5fd"
+rose-400 = "#fb7185"
+red-500 = "#ef5350"
+amber-400 = "#fbbf24"
+amber-700 = "#b45309"
