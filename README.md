@@ -12,6 +12,8 @@ A dark [Helix](https://helix-editor.com) theme built around a slate foundation a
 
 > _Slate below, teal above._
 
+![Slatewave preview](docs/preview.png)
+
 </div>
 
 ---
